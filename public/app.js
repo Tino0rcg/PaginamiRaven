@@ -97,26 +97,9 @@ if (brandVideo) {
     videoObserver.observe(brandVideo);
 }
 
-// Parallax Effect for Hero
-const heroBg = document.querySelector('.hero-bg');
-const heroSection = document.querySelector('.split-hero');
-
-if (heroBg && heroSection) {
-    heroSection.addEventListener('mousemove', (e) => {
-        const xAxis = (window.innerWidth / 2 - e.pageX) / 30;
-        const yAxis = (window.innerHeight / 2 - e.pageY) / 30;
-        heroBg.style.transform = `translate(${xAxis}px, ${yAxis}px)`;
-    });
-    
-    heroSection.addEventListener('mouseleave', () => {
-        heroBg.style.transition = 'transform 0.5s ease-out';
-        heroBg.style.transform = `translate(0px, 0px)`;
-    });
-    
-    heroSection.addEventListener('mouseenter', () => {
-        heroBg.style.transition = 'none'; // remove transition for smooth tracking
-    });
-}
+// Parallax Effect for Hero (REMOVED)
+// const heroBg = document.querySelector('.hero-bg');
+// const heroSection = document.querySelector('.split-hero');
 
 // Floating Ash Particles Effect
 const createParticles = () => {
@@ -127,7 +110,7 @@ const createParticles = () => {
     container.className = 'particles-container';
     heroSection.appendChild(container);
 
-    const particleCount = 35; // Number of particles
+    const particleCount = 80; // Increased number of particles
 
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
