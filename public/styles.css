@@ -684,3 +684,90 @@ footer p {
     color: #ccc;
     margin-top: 0.5rem;
 }
+
+/* ========================================= */
+/* MOBILE RESPONSIVENESS (max-width: 768px)  */
+/* ========================================= */
+@media (max-width: 768px) {
+    /* 1. Navbar Minimalista */
+    .split-nav {
+        padding: 1.5rem 5%;
+        grid-template-columns: 1fr auto 1fr;
+    }
+    
+    .left-links {
+        display: block; 
+        visibility: hidden; /* Takes up space so logo stays centered */
+    }
+    .left-links li { 
+        display: none; 
+    }
+    
+    .right-links {
+        gap: 1rem;
+    }
+    
+    .center-logo img {
+        height: 45px;
+    }
+    
+    /* 2. Hero Typography & Spacing */
+    .brand-title {
+        font-size: 4rem;
+        margin-left: 0;
+    }
+    
+    .brand-slogan {
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 2rem;
+    }
+    
+    .brand-desc {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+    }
+
+    .hero-content {
+        margin-top: -5vh; /* Levantar ligeramente en móvil */
+        padding: 0 1rem;
+    }
+    
+    /* 3. Features Bar apilada */
+    .features-bar {
+        flex-direction: column;
+        padding: 2rem 5%;
+        gap: 1.5rem;
+        background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(5,5,5,0.8) 100%);
+    }
+    
+    .feature-item {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    
+    /* 4. Cart Modal Full Width */
+    .cart-modal {
+        width: 100%;
+    }
+    
+    /* 5. Padding global */
+    .collection-section, .about-section, footer {
+        padding: 4rem 5%;
+    }
+    
+    .product-page-container {
+        padding: 100px 5% 30px 5%; /* Menos espacio superior en móvil */
+        gap: 2rem;
+        grid-template-columns: 1fr; /* Apilar galería y detalles */
+    }
+
+    .product-details {
+        position: static;
+    }
+    
+    .product-details h1 {
+        font-size: 2rem;
+    }
+}
