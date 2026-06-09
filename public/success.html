@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raven | Pago Exitoso</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; }
+        .receipt-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+        .receipt-box {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 3rem;
+            max-width: 500px;
+            background: rgba(10,10,10,0.8);
+        }
+        .receipt-box h1 {
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1em;
+            font-size: 2rem;
+        }
+        .receipt-details {
+            text-align: left;
+            margin-bottom: 2rem;
+            color: #aaa;
+            line-height: 1.8;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 1.5rem 0;
+        }
+        .receipt-details span { color: #fff; font-weight: bold; float: right; }
+        .btn-outline {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        .btn-outline:hover {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-box">
+            <h1>PAGO EXITOSO</h1>
+            <p style="margin-bottom: 2rem; color: #888;">Tu orden ha sido procesada correctamente en las sombras.</p>
+            
+            <div class="receipt-details" id="receipt">
+                <p>Orden de Compra: <span id="r-order"></span></p>
+                <p>Código de Autorización: <span id="r-auth"></span></p>
+                <p>Monto Pagado: <span id="r-amount"></span></p>
+            </div>
+            
+            <a href="/" class="btn-outline">VOLVER AL INICIO</a>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('r-order').innerText = urlParams.get('buyOrder') || 'N/A';
+        document.getElementById('r-auth').innerText = urlParams.get('authCode') || 'N/A';
+        const amount = urlParams.get('amount');
+        document.getElementById('r-amount').innerText = amount ? '$' + parseInt(amount).toLocaleString('es-CL') : 'N/A';
+    </script>
+</body>
+</html>

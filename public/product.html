@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raven - Midnight Denim Jacket">
+    <title>Raven | Midnight Denim Jacket</title>
+    <link rel="icon" href="favilisto.png?v=10" type="image/png">
+    <link rel="apple-touch-icon" href="favilisto.png?v=10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-page-container {
+            padding: 140px 5% 50px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .product-gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .product-gallery-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            transition: filter 0.3s;
+        }
+        
+        .product-gallery-grid img:hover {
+            filter: brightness(1.2);
+        }
+
+        .product-details {
+            padding-top: 2rem;
+            position: sticky;
+            top: 140px;
+            height: fit-content;
+        }
+
+        .product-details h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .product-history {
+            color: #888;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-size: 0.95rem;
+        }
+
+        .product-history h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .product-history p {
+            margin-bottom: 1.2rem;
+        }
+
+        .btn-add-cart {
+            width: 100%;
+            padding: 1.2rem;
+            background: #fff;
+            color: #000;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-add-cart:hover {
+            background: #ccc;
+        }
+
+        @media (max-width: 900px) {
+            .product-page-container {
+                grid-template-columns: 1fr;
+            }
+            .product-details {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <nav class="navbar split-nav" style="position: relative; background: #000; padding: 2rem 6rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <ul class="nav-links left-links">
+            <li><a href="index.html#inicio">INICIO</a></li>
+            <li><a href="index.html#collection">COLECCIONES</a></li>
+            <li><a href="index.html#filosofia">FILOSOFÍA</a></li>
+            <li><a href="index.html#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="logo center-logo"><a href="index.html"><img src="assets/logo.png" alt="Raven Logo" style="height: 60px;"></a></div>
+        <ul class="nav-links right-links">
+            <li><a href="#user"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a></li>
+            <li><a href="#cart" id="open-cart-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="product-page-container">
+            <!-- Left: Gallery -->
+            <div class="product-gallery-grid">
+                <img src="assets/Modelo1.jpeg" alt="Raven Model 1">
+                <img src="assets/jacket1.jpeg" alt="Raven Jacket Front">
+                <img src="assets/Modelo2.jpeg" alt="Raven Model 2">
+                <img src="assets/jacket2.jpeg" alt="Raven Jacket Back">
+            </div>
+
+            <!-- Right: Details -->
+            <div class="product-details">
+                <h1>MIDNIGHT DENIM JACKET</h1>
+                <p class="product-price">$120.000</p>
+                
+                <div class="product-history">
+                    <h3>EL CONCEPTO</h3>
+                    <p>Diseñada en el cruce entre la sastrería moderna y la indumentaria táctica. La Midnight Denim Jacket es una armadura diseñada exclusivamente para el entorno urbano nocturno.</p>
+                    <p>Construida con materiales de alta densidad y forro interno para aislar térmicamente el cuerpo, cada costura ha sido pensada para mantener una silueta geométrica, minimalista e imponente. Los bolsillos de acceso rápido están ocultos en los pliegues estructurales para no romper la estética limpia del negro absoluto.</p>
+                    <p>Nace de la necesidad de encontrar silencio visual. No hay logos estridentes ni colores llamativos, solo forma, función y una presencia que se hace sentir sin tener que gritar. Nacida para liderar en las sombras.</p>
+                </div>
+
+                <button class="btn-add-cart add-to-cart" data-name="Midnight Denim Jacket" data-price="120000">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-content-wrapper">
+                <div class="cart-header">
+                    <h2>TU CARRITO</h2>
+                    <button id="close-cart" class="close-cart">&times;</button>
+                </div>
+                <div id="cart-items" class="cart-items">
+                    <p class="empty-cart">El carrito está vacío</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>TOTAL</span>
+                        <span id="cart-total-price">$0</span>
+                    </div>
+                    <form id="checkout-form" method="POST" action="">
+                        <input type="hidden" name="token_ws" id="token_ws">
+                        <button type="button" id="btn-pay" class="btn-primary" disabled>PAGAR CON WEBPAY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="contacto">
+            <div class="footer-logo"><img src="assets/logo.png" alt="Raven Logo"></div>
+            <p>© 2026 Raven Streetwear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

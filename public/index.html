@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raven - Premium Dark Streetwear">
+    <title>Raven | Streetwear</title>
+    <link rel="icon" href="favilisto.png?v=10" type="image/png">
+    <link rel="apple-touch-icon" href="favilisto.png?v=10">
+    <!-- Google Fonts: Inter para un look moderno y limpio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cursor"></div>
+    
+    <nav class="navbar split-nav">
+        <ul class="nav-links left-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#collection">COLECCIONES</a></li>
+            <li><a href="#filosofia">FILOSOFÍA</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="logo center-logo"><img src="assets/logo.png" alt="Raven Logo"></div>
+        <ul class="nav-links right-links">
+            <li><a href="#user"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a></li>
+            <li><a href="#cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <header class="hero split-hero">
+        <div class="hero-bg">
+            <img src="assets/hero-new.jpeg" alt="Raven Hero" class="hero-bg-img">
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content left-aligned">
+            <h1 class="brand-title">RAVEN</h1>
+            <h3 class="brand-slogan" style="display: flex; align-items: center; gap: 15px;">
+                NACIDO PARA LIDERAR
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+            </h3>
+            
+            <p class="brand-desc">
+                RAVEN nace de las sombras y la soledad.<br>
+                Un enfoque donde la textura, el corte y la silueta<br>
+                hablan más fuerte que los colores.<br>
+                Nuestra estética está diseñada para quienes<br>
+                encuentran paz en la oscuridad.
+            </p>
+            
+            <a href="#collection" class="btn-text">EXPLORAR COLECCIÓN <span class="arrow">&rarr;</span></a>
+        </div>
+
+        <div class="features-bar">
+            <div class="feature-item">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"><path d="M12 2l3 7h7l-5 4 2 7-7-4-7 4 2-7-5-4h7z"/></svg></div>
+                <div class="feature-text">
+                    <h4>DISEÑO INTENCIONAL</h4>
+                    <p>Cada detalle habla sin necesidad de palabras.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <div class="feature-text">
+                    <h4>CALIDAD SUPERIOR</h4>
+                    <p>Materiales seleccionados. Construcción precisa.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div>
+                <div class="feature-text">
+                    <h4>IDENTIDAD AUTÉNTICA</h4>
+                    <p>No seguimos tendencias. Construimos visión.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="vision" class="video-section">
+            <video playsinline controls class="brand-video">
+                <source src="assets/presentation.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </section>
+
+        <section id="collection" class="collection-section">
+            <h2 class="section-title">NUEVA COLECCIÓN</h2>
+            <div class="product-grid single-product">
+                <!-- Single Product Feature -->
+                <div class="product-card premium-showcase">
+                    <div class="product-img-wrapper">
+                        <img src="assets/Modelo1.jpeg" alt="Raven Midnight Jacket">
+                        <div class="product-overlay">
+                            <a href="product.html" class="btn-outline" style="text-decoration:none; display:inline-block;">VER DETALLES</a>
+                        </div>
+                    </div>
+                    <div class="product-info center-info">
+                        <h3>Midnight Denim Jacket</h3>
+                        <p class="price">$120.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>EL CONCEPTO</h2>
+                <p>Raven nace de las sombras. Un enfoque total black donde la textura, el corte y la silueta hablan más fuerte que los colores. Nuestra estética está diseñada para quienes encuentran paz en la oscuridad.</p>
+            </div>
+        </section>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-content-wrapper">
+                <div class="cart-header">
+                    <h2>TU CARRITO</h2>
+                    <button id="close-cart" class="close-cart">&times;</button>
+                </div>
+                <div id="cart-items" class="cart-items">
+                    <p class="empty-cart">El carrito está vacío</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>TOTAL</span>
+                        <span id="cart-total-price">$0</span>
+                    </div>
+                    <form id="checkout-form" method="POST" action="">
+                        <input type="hidden" name="token_ws" id="token_ws">
+                        <button type="button" id="btn-pay" class="btn-primary" disabled>PAGAR CON WEBPAY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><img src="assets/logo.png" alt="Raven Logo"></div>
+            <p>© 2026 Raven Streetwear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
