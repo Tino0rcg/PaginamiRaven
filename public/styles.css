@@ -712,30 +712,46 @@ footer p {
     }
     
     /* 2. Hero Typography & Spacing */
+    .split-hero {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 100px; /* Space for navbar */
+    }
+
     .brand-title {
-        font-size: 4rem;
+        font-size: 3rem; /* Reduced to fit small screens */
         margin-left: 0;
+        letter-spacing: 0.1em;
     }
     
     .brand-slogan {
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
-        margin-bottom: 2rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 1.5rem;
     }
     
     .brand-desc {
         font-size: 0.8rem;
-        line-height: 1.8;
-        margin-bottom: 3rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    .brand-desc br {
+        display: none; /* Let text wrap naturally on mobile */
     }
 
     .hero-content {
-        margin-top: -5vh; /* Levantar ligeramente en móvil */
-        padding: 0 1rem;
+        margin-top: 0; 
+        padding: 0 5%;
+        margin-bottom: 3rem; /* Space before features bar */
     }
     
     /* 3. Features Bar apilada */
     .features-bar {
+        position: relative; /* Prevent absolute overlapping on small screens */
         flex-direction: column;
         padding: 2rem 5%;
         gap: 1.5rem;
