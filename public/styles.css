@@ -713,24 +713,49 @@ footer p {
     
     /* 2. Hero Typography & Spacing */
     .split-hero {
-        height: auto;
-        min-height: 100vh;
+        height: 100vh; /* Keep exact viewport height */
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-top: 100px; /* Space for navbar */
+        justify-content: space-between; /* Push content to middle, features to bottom */
+        padding: 120px 5% 0 5%; /* Top padding for nav, zero bottom so features touch bottom */
+        overflow: hidden;
+    }
+
+    /* Fix image and gradient for vertical screens */
+    .hero-bg-img {
+        width: 100%;
+        object-position: center center;
+    }
+
+    .hero-gradient {
+        /* Uniform dark overlay instead of gradient so text is readable anywhere */
+        background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+        margin: auto 0; /* Auto margins vertically centers it between nav and features */
+        padding: 0; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .brand-title {
-        font-size: 3rem; /* Reduced to fit small screens */
+        font-size: 18vw; /* Scales perfectly to screen width */
+        line-height: 1;
         margin-left: 0;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
+        text-align: center;
+        width: 100%;
     }
     
     .brand-slogan {
         font-size: 0.75rem;
         letter-spacing: 0.1em;
         margin-bottom: 1.5rem;
+        justify-content: center; /* Center the flex content */
     }
     
     .brand-desc {
@@ -743,19 +768,18 @@ footer p {
         display: none; /* Let text wrap naturally on mobile */
     }
 
-    .hero-content {
-        margin-top: 0; 
-        padding: 0 5%;
-        margin-bottom: 3rem; /* Space before features bar */
-    }
+    /* Fixed duplicate block removed */
     
     /* 3. Features Bar apilada */
     .features-bar {
-        position: relative; /* Prevent absolute overlapping on small screens */
+        position: relative;
         flex-direction: column;
-        padding: 2rem 5%;
-        gap: 1.5rem;
-        background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(5,5,5,0.8) 100%);
+        padding: 1.5rem 5%;
+        gap: 1rem;
+        background: rgba(5,5,5,0.9); /* Solid dark bottom bar */
+        width: 100%;
+        margin-bottom: 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
     
     .feature-item {
