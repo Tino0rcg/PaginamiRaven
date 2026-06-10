@@ -153,10 +153,10 @@ body {
 }
 
 .brand-typography-mask {
-    height: 350px; /* Masivo para compensar los bordes invisibles de la imagen */
+    height: 480px; /* Colosal */
     width: 100%;
-    max-width: 1000px;
-    margin-bottom: -7rem; /* Margen muy negativo para anular el relleno invisible y pegar brutalmente el texto de abajo */
+    max-width: 1200px;
+    margin-bottom: -11rem; /* Margen extremadamente negativo para compensar el tamaño titánico del relleno de la imagen */
     margin-left: -5px; /* Optical alignment */
     background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
     background-size: 200% auto;
@@ -1043,8 +1043,8 @@ footer {
     }
 
     .brand-typography-mask {
-        height: 140px; /* Masivo en movil tambien */
-        margin-bottom: -3rem; /* Acercar texto en movil agresivamente */
+        height: 220px; /* Colosal en movil */
+        margin-bottom: -5rem; /* Acercar texto en movil */
         margin-left: 0;
     }
     
