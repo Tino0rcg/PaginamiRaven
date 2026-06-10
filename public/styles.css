@@ -153,9 +153,9 @@ body {
 }
 
 .brand-typography-mask {
-    height: 120px;
+    height: 220px; /* Increased to compensate for image padding and make letters massive again */
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     margin-bottom: 2rem;
     margin-left: -5px; /* Optical alignment */
     background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
@@ -1043,7 +1043,7 @@ footer {
     }
 
     .brand-typography-mask {
-        height: 60px; /* Smaller on mobile */
+        height: 100px; /* Increased for mobile to compensate for image padding */
         margin-bottom: 1rem;
         margin-left: 0;
     }
