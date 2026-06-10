@@ -152,16 +152,11 @@ body {
     letter-spacing: 0.3em;
 }
 
-.brand-title {
-    font-size: 8rem;
-    font-weight: 900;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, #555555 0%, #ffffff 50%, #555555 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.brand-typography-img {
+    height: 120px; /* Adjust height to match the old 8rem text impact */
+    max-width: 100%;
+    margin-bottom: 2rem;
+    object-fit: contain;
     margin-left: -5px; /* Optical alignment */
 }
 
@@ -629,7 +624,7 @@ footer {
     animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
 }
 
-.split-hero .brand-title {
+.split-hero .brand-typography-img {
     animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both, shineSweep 6s linear infinite;
 }
 
@@ -1035,6 +1030,12 @@ footer {
         width: 100%;
     }
 
+    .brand-typography-img {
+        height: 60px; /* Smaller on mobile */
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    
     .brand-title {
         font-size: 18vw; /* Scales perfectly to screen width */
         line-height: 1;
