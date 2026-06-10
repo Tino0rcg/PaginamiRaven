@@ -152,12 +152,18 @@ body {
     letter-spacing: 0.3em;
 }
 
-.brand-typography-img {
-    height: 120px; /* Adjust height to match the old 8rem text impact */
-    max-width: 100%;
+.brand-typography-mask {
+    height: 120px;
+    width: 100%;
+    max-width: 600px;
     margin-bottom: 2rem;
-    object-fit: contain;
     margin-left: -5px; /* Optical alignment */
+    background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
+    background-size: 200% auto;
+    -webkit-mask-image: url('assets/raven_letras_si.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: left center;
 }
 
 .brand-slogan {
@@ -613,6 +619,10 @@ footer {
     100% { filter: drop-shadow(0 0 0px rgba(255,255,255,0)) brightness(0.9); }
 }
 
+@keyframes shineSweep {
+    to { background-position: -200% center; }
+}
+
 .hero-subtitle svg {
     animation: slowRotate 15s linear infinite;
 }
@@ -626,8 +636,8 @@ footer {
     animation: fadeInUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
 }
 
-.split-hero .brand-typography-img {
-    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both, pulseGlow 4s ease-in-out infinite 1.6s;
+.split-hero .brand-typography-mask {
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both, shineSweep 6s linear infinite;
 }
 
 .split-hero .brand-slogan {
@@ -1032,7 +1042,7 @@ footer {
         width: 100%;
     }
 
-    .brand-typography-img {
+    .brand-typography-mask {
         height: 60px; /* Smaller on mobile */
         margin-bottom: 1rem;
         margin-left: 0;
