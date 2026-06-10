@@ -25,11 +25,13 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
+            align-content: start; /* Prevents rows from stretching vertically if the container is very tall */
         }
 
         .product-gallery-grid img {
             width: 100%;
-            height: auto;
+            height: 100%; /* Force fill grid cell */
+            display: block; /* Remove inline whitespace gap */
             aspect-ratio: 3/4;
             object-fit: cover;
             transition: filter 0.3s;
