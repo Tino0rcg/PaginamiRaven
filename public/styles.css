@@ -135,7 +135,7 @@ body {
 
 .hero-content {
     z-index: 10;
-    max-width: 600px;
+    max-width: 1000px; /* Incrementado para permitir que la imagen crezca */
     margin-top: -4rem; /* Margen negativo para subir todo el bloque y pegarlo mas a la barra superior */
 }
 
