@@ -152,11 +152,17 @@ body {
     letter-spacing: 0.3em;
 }
 
+.brand-scale-wrapper {
+    transform: scale(1.6);
+    transform-origin: left center;
+    width: 100%;
+}
+
 .brand-typography-mask {
-    height: 480px; /* Colosal */
+    height: 350px; 
     width: 100%;
     max-width: 1200px;
-    margin-bottom: -11rem; /* Margen extremadamente negativo para compensar el tamaño titánico del relleno de la imagen */
+    margin-bottom: -7rem; 
     margin-left: -5px; /* Optical alignment */
     background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
     background-size: 200% auto;
@@ -1042,9 +1048,14 @@ footer {
         width: 100%;
     }
 
+    .brand-scale-wrapper {
+        transform: scale(1.4);
+        transform-origin: center center;
+    }
+
     .brand-typography-mask {
-        height: 220px; /* Colosal en movil */
-        margin-bottom: -5rem; /* Acercar texto en movil */
+        height: 180px; 
+        margin-bottom: -4rem; 
         margin-left: 0;
     }
     
