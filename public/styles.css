@@ -136,7 +136,7 @@ body {
 .hero-content {
     z-index: 10;
     max-width: 600px;
-    margin-top: 0; /* Restaurado a 0 para mantener el texto arriba */
+    margin-top: -4rem; /* Margen negativo para subir todo el bloque y pegarlo mas a la barra superior */
 }
 
 .hero-subtitle {
@@ -156,7 +156,7 @@ body {
     height: 350px; /* Masivo para compensar los bordes invisibles de la imagen */
     width: 100%;
     max-width: 1000px;
-    margin-bottom: -3rem; /* Margen negativo para anular el relleno invisible de la imagen y acercar el texto de abajo */
+    margin-bottom: -7rem; /* Margen muy negativo para anular el relleno invisible y pegar brutalmente el texto de abajo */
     margin-left: -5px; /* Optical alignment */
     background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
     background-size: 200% auto;
@@ -1044,7 +1044,7 @@ footer {
 
     .brand-typography-mask {
         height: 140px; /* Masivo en movil tambien */
-        margin-bottom: -1.5rem; /* Acercar texto en movil */
+        margin-bottom: -3rem; /* Acercar texto en movil agresivamente */
         margin-left: 0;
     }
     
