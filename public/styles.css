@@ -136,7 +136,7 @@ body {
 .hero-content {
     z-index: 10;
     max-width: 600px;
-    margin-top: 10vh; /* Pushes text down away from absolute navbar */
+    margin-top: 0; /* Restaurado a 0 para mantener el texto arriba */
 }
 
 .hero-subtitle {
@@ -153,10 +153,10 @@ body {
 }
 
 .brand-typography-mask {
-    height: 220px; /* Increased to compensate for image padding and make letters massive again */
+    height: 350px; /* Masivo para compensar los bordes invisibles de la imagen */
     width: 100%;
-    max-width: 900px;
-    margin-bottom: 2rem;
+    max-width: 1000px;
+    margin-bottom: -3rem; /* Margen negativo para anular el relleno invisible de la imagen y acercar el texto de abajo */
     margin-left: -5px; /* Optical alignment */
     background: linear-gradient(90deg, #333333 0%, #ffffff 50%, #333333 100%);
     background-size: 200% auto;
@@ -171,14 +171,14 @@ body {
     font-weight: 300;
     letter-spacing: 0.4em;
     color: rgba(255,255,255,0.6);
-    margin-bottom: 2rem; /* Reduced from 4rem */
+    margin-bottom: 4rem; /* Restaurado al diseño original */
 }
 
 .brand-desc {
     font-size: 0.95rem;
     line-height: 2;
     color: rgba(255,255,255,0.4);
-    margin-bottom: 3rem; /* Reduced from 5rem */
+    margin-bottom: 5rem; /* Restaurado al diseño original */
 }
 
 .btn-text {
@@ -1043,8 +1043,8 @@ footer {
     }
 
     .brand-typography-mask {
-        height: 100px; /* Increased for mobile to compensate for image padding */
-        margin-bottom: 1rem;
+        height: 140px; /* Masivo en movil tambien */
+        margin-bottom: -1.5rem; /* Acercar texto en movil */
         margin-left: 0;
     }
     
